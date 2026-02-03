@@ -1,0 +1,25 @@
+name: Test Action
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Sanitized Qt
+        id: setup-qt
+        uses: ./
+        with:
+          release: "6.11"
+          qt-version: "6.11"
+          qt-flavor: asan
+
+      - name: Verify Qt installation
+        run: |
+          echo "Qt path: ${{ steps.setup-qt.outputs.qt-path }}"
+          qmake --version

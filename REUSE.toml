@@ -1,0 +1,18 @@
+version = 1
+SPDX-PackageName = "sanitized-qt-action"
+SPDX-PackageSupplier = "<info@kdab.com>"
+SPDX-PackageDownloadLocation = "https://www.github.com/KDABLabs/sanitized-qt-action"
+
+#misc
+[[annotations]]
+path = [
+    "action.yml",
+    ".pre-commit-config.yaml",
+    "Changelog",
+    "README.md",
+    ".github/workflows/test.yml"
+]
+
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>"
+SPDX-License-Identifier = "MIT"
