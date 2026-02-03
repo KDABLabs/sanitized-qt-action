@@ -15,9 +15,8 @@ jobs:
         id: setup-qt
         uses: ./
         with:
-          release: "6.11"
-          qt-version: "6.11"
-          qt-flavor: asan
+          qt-tag: "v6.11.0-beta2"
+          qt-flavor: "asan"
 
       - name: Verify Qt installation
         run: |

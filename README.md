@@ -10,19 +10,14 @@ Used internally by KDAB for the open-source KD* products CI. Only 6.11 LGPL Qt i
     - name: Setup Sanitized Qt
       uses: ./
       with:
-         release: "6.11"
-         qt-version: "v6.11.0"
+         qt-tag: "v6.11.0-beta2"
          qt-flavor: asan
 ```
 
-## release
+## qt-tag
 
-Only accepts "6.11" currently.
-
-## qt-version
-
-Can be a sha1, a version tag or anything associated with the release.
-Only "v6.11.0" supported currently.
+Can be a sha1 or a tag
+Only "v6.11.0-beta2" supported currently.
 
 ## qt-flavor
 
