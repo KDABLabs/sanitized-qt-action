@@ -8,7 +8,7 @@ Used internally by KDAB for the open-source KD* products CI. Only 6.11 LGPL Qt i
 
 ```yaml
     - name: Setup Sanitized Qt
-      uses: KDABLabs/sanitized-qt-action
+      uses: KDABLabs/sanitized-qt-action@v1
       with:
          qt-tag: "v6.11.0-beta2"
          qt-flavor: asan
