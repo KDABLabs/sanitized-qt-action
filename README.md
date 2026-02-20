@@ -21,7 +21,7 @@ Only "v6.11.0-beta2" supported currently.
 
 ## qt-flavor
 
-This accepts `asan`, `tsan`, `debug` or `profile`. `asan` includes `lsan`.
+This accepts `asan`, `ubsan`, `tsan`, `debug` or `profile`. `asan` includes `lsan`.
 All of them, even `profile` have asserts enabled and are.
 
 ## Warning

@@ -6,7 +6,7 @@ inputs:
     description: "Qt tag or sha1 to download, e.g., v6.11.0-beta2"
     required: true
   qt-flavor:
-    description: "Sanitizer/build variant: asan, tsan, debug, or profile"
+    description: "Sanitizer/build variant: asan, ubsan, tsan, debug, or profile"
     required: true
 
 outputs:
