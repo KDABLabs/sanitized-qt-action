@@ -12,7 +12,7 @@ jobs:
       matrix:
         qt-flavor: [asan, ubsan, tsan, debug, profile]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Sanitized Qt
         id: setup-qt
