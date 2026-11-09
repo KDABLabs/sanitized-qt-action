@@ -30,7 +30,7 @@ runs:
           libxcb-cursor0
 
     - name: Checkout CI tools
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         repository: KDABLabs/ci-release-tools
         path: ci-release-tools
